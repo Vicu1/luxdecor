@@ -1,15 +1,20 @@
+import bg from '../assets/images/bg.jpg'
+import BlackBtn from "../components/UI/BlackBtn.jsx";
 const HomePage = () => {
     return (
         <section className="home">
-            <h1>
-                Site name
-            </h1>
-            <p>
-                Site sub title
-            </p>
-            <a className="button" href="">
-                See projects
-            </a>
+            <img className={'home-bg'} src={bg} alt={'bg'}/>
+            <div className={'container'}>
+                <h1>
+                    Site name
+                </h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, est!
+                </p>
+                <BlackBtn url={'/projects'}>
+                    See projects
+                </BlackBtn>
+            </div>
         </section>
     )
 }

@@ -1,5 +1,7 @@
 import Header from "../components/Header.jsx";
 import instagram from '../assets/images/footer/instagram.png'
+import facebook from '../assets/images/footer/facebook.png'
+import twitter from '../assets/images/footer/twitter.png'
 import logo from '../assets/images/logo.png'
 import {useEffect} from "react";
 import {Outlet, useLocation} from "react-router-dom";
@@ -12,11 +14,9 @@ const DefaultLayout = () => {
 
     return (
         <>
-            <Header />
+            <Header background={'withBg'} />
             <main>
-                <div className="container">
-                    <Outlet />
-                </div>
+                <Outlet />
             </main>
             <footer>
                 <div className="container">
@@ -55,10 +55,10 @@ const DefaultLayout = () => {
                                     <img src={instagram} alt="img" />
                                 </a>
                                 <a className="footer-info" href="">
-                                    <img src={instagram} alt="img" />
+                                    <img src={facebook} alt="img" />
                                 </a>
                                 <a className="footer-info" href="">
-                                    <img src={instagram} alt="img" />
+                                    <img src={twitter} alt="img" />
                                 </a>
                             </div>
                         </div>

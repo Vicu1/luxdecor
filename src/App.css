@@ -9,10 +9,16 @@ html{
 body{
   margin: 0;
   font-size: 16px;
-  /*font-family: 'DM Sans', sans-serif;*/
+  /*font-family: 'Ubuntu', sans-serif;*/
+  font-family: 'DM Sans', sans-serif;
   font-weight: 400;
-  background-color: #171718;
-  color: #fff;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+.withBg {
+  background-color: rgb(74, 74, 74);
+  box-shadow: 0 0 5px 5px rgba(47, 47, 47, 0.24);
 }
 
 p, h1, h2, h3, h4, h5, h6{
@@ -38,14 +44,13 @@ ul{
 }
 
 header{
-  padding: 20px 0;
+  padding: 10px 0;
   position: fixed;
   z-index: 5;
-  border-bottom: 1px solid #2d2d30;
   right: 0;
   left: 0;
   top: 0;
-  background-color: #171718;
+  /*background-color: #171718;*/
 }
 
 header nav{
@@ -60,7 +65,7 @@ header ul{
 
 .nav-item{
   font-weight: 700;
-  font-style: 24px;
+  font-size: 25px;
   line-height: 16px;
 }
 
@@ -73,17 +78,23 @@ header ul{
   padding-bottom: 8px;
 }
 
-.nav-link:hover::after{
-  display: block;
+.nav-link::after{
   position: absolute;
   content: "";
-  background-color: #5151b9;
+  display: block;
   height: 3px;
-  bottom: 0;
-  left: 0;
+  width: 100%;
   right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #242428;
+  transform: scaleX(0);
+  transition: all 0.2s;
 }
 
+.nav-link:hover::after{
+  transform: scaleX(1);
+}
 .nav-link-active::after{
   display: block;
   position: absolute;
@@ -100,10 +111,21 @@ header ul{
 }
 
 .home{
+  position: relative;
   height: 100vh;
   text-align: center;
 }
-
+.home-bg {
+  filter: brightness(50%);
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 .home h1{
   font-weight: 700;
   font-size: 60px;
@@ -119,7 +141,8 @@ header ul{
 
 .home p{
   font-size: 22px;
-  margin: 25px 0;
+  margin-top: 25px;
+  margin-bottom: 40px;
 }
 
 .button{
@@ -146,21 +169,20 @@ header ul{
 /*About*/
 
 .about-content{
-  text-align: center;
-  margin: 0 100px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  background-color: #1e1e1f;
-  border: 2px solid #242425;
   border-radius: 10px;
+  color: #000000;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 120px;
+  margin-bottom: 50px;
   column-gap: 20px;
   padding: 25px;
 }
 
 .img-about{
   width: 300px;
+  border-radius: 20px;
 }
 
 .about-content-inner p{
@@ -169,7 +191,10 @@ header ul{
 }
 
 .knowladge{
-  margin-top: 100px;
+  color: #000000;
+  background-color: #f3f3f3;
+  padding-top: 50px;
+  padding-bottom: 90px;
 }
 
 .knowladge h2{
@@ -178,20 +203,25 @@ header ul{
 
 .knowladge-icon{
   width: 50px;
+  margin-right: 10px;
+}
+.knowladge-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.knowladge-inner-card{
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px 4px rgba(146, 146, 146, 0.27);
+  border-radius: 10px;
 }
 
 .knowladge-inner{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 20px;
-  row-gap: 20px;
-}
-
-.knowladge-inner-card{
-  background-color: #1e1e1f;
-  padding: 20px;
-  border: 2px solid #242425;
-  border-radius: 10px;
+  column-gap: 35px;
+  row-gap: 35px;
 }
 
 
@@ -218,41 +248,86 @@ header ul{
 
 /*Contacts*/
 
-form{
-  background-color: #1e1e1f;
-  border: 2px solid #242425;
+.contacts {
+  color: #000000;
+}
+
+.contacts-form{
+  height: 100vh;
+  color: #000000;
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+.contact-bg {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(50%);
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  z-index: -1;
+}
+.contacts-wrapper {
+  position: relative;
+  height: 80vh;
+}
+.contacts-form form {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 55%;
+  background-color: #f3f3f3b0;
+  box-shadow: 8px 6px 9px 3px rgba(146, 146, 146, 0.27);
   border-radius: 8px;
-  width: 450px;
-  margin: 0 auto;
+  margin-bottom: 80px;
   padding: 25px;
   display: flex;
   flex-direction: column;
   line-height: 30px;
 }
-
-.contacts-form{
-  margin-top: 50px;
+.contact-details {
+  box-shadow: 0 0 10px 4px rgba(146, 146, 146, 0.27);
+  border-radius: 10px;
+  background-color: hsl(0deg 0% 100% / 35%);
+  backdrop-filter: blur(0.3em);
+  padding: 30px 80px 30px 30px;
+ text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 20px;
+  justify-items: center;
+  width: 50%;
+}
+.contact-details h3 {
+  margin: 10px 0;
 }
 
 .contacts-form input,
 .contacts-form textarea{
   padding: 15px 20px;
-  background-color: #363637;
-  border: 1px solid rgb(84, 84, 84);
+  border: none;
   width: 100%;
   border-radius: 5px;
   resize: none;
-  color: white;
+  color: #000000;
+}
+.contacts-form input:focus,
+.contacts-form textarea:focus {
+  border:none;
 }
 
 .contacts-form textarea{
   height: 100px;
+  margin-bottom: 15px;
 }
 
 .contacts-form input::placeholder,
 .contacts-form textarea::placeholder{
   font-size: 16px;
-  /*font-family: 'DM Sans', sans-serif;*/
+  font-family: 'DM Sans', sans-serif;
   font-weight: 400;
 }
 
@@ -279,8 +354,8 @@ form{
 /*Footer*/
 
 footer{
-  border-top: 1px solid #2d2d30;
-  margin-top: 100px;
+  background-color: rgb(74, 74, 74);
+  box-shadow: 0 0 5px 5px rgba(47, 47, 47, 0.24);
   padding: 50px 0;
 }
 
@@ -308,16 +383,55 @@ footer{
 }
 
 .footer-item a{
-  font-style: 14px;
+  font-size: 14px;
   margin-top: 20px;
 }
 
 .footer-social img{
   width: 40px;
+  margin-right: 15px;
 }
 
 .footer-social a{
   margin-right: 10px;
   margin-top: 20px;
   display: inline-block;
+}
+
+.black-btn{
+  padding: 19px 30px;
+  border-radius: 4px;
+  background-color: #282424;
+  transition: all 250ms ease;
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 300;
+  border: none;
+}
+
+.black-btn:hover {
+  background-color: #383838;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.24);
+}
+.about {
+  position: relative;
+}
+.about-bg {
+  height: 400px;
+  width: 100%;
+  filter: brightness(50%);
+  /*object-fit: cover;*/
+  background-image: url("assets/images/about-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center 80%;
+  background-attachment: fixed;
+}
+.about h1 {
+  position: absolute;
+  top: 50%;
+  color: #ffffff;
+  left: 50%;
+  font-size: 60px;
+  transform: translate(-50%);
 }

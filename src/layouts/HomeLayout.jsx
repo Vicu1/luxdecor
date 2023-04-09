@@ -1,4 +1,4 @@
-import {Link, Outlet} from "react-router-dom";
+import { Outlet} from "react-router-dom";
 import Header from "../components/Header.jsx";
 
 const HomeLayout = () => {
@@ -6,9 +6,7 @@ const HomeLayout = () => {
         <>
             <Header />
             <main>
-                <div className="container">
-                    <Outlet/>
-                </div>
+                <Outlet/>
             </main>
         </>
     )

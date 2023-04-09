@@ -1,8 +1,8 @@
 import {Link} from "react-router-dom";
 import logo from '../assets/images/logo.png'
-const Header = () => {
+const Header = ({background = ''}) => {
     return (
-        <header>
+        <header className={background}>
             <div className="container">
                 <nav>
                     <Link to={'/'}>
