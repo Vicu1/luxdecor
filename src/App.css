@@ -17,8 +17,9 @@ body{
 }
 
 .withBg {
-  background-color: rgb(74, 74, 74);
-  box-shadow: 0 0 5px 5px rgba(47, 47, 47, 0.24);
+  color: #444444;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
 p, h1, h2, h3, h4, h5, h6{
@@ -95,19 +96,23 @@ header ul{
 .nav-link:hover::after{
   transform: scaleX(1);
 }
+
 .nav-link-active::after{
-  display: block;
   position: absolute;
   content: "";
-  background-color: #5151b9;
+  display: block;
   height: 3px;
-  bottom: 0;
-  left: 0;
+  width: 100%;
   right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #242428;
+  transform: scaleX(1);
+  transition: all 0.2s;
 }
 
 .logo{
-  height: 60px;
+  height: 45px;
 }
 
 .home{
@@ -116,7 +121,7 @@ header ul{
   text-align: center;
 }
 .home-bg {
-  filter: brightness(50%);
+  filter: brightness(75%);
   width: 100%;
   height: 100vh;
   z-index: -1;
@@ -132,9 +137,17 @@ header ul{
   line-height: 70px;
   margin: 0 auto;
   max-width: 700px;
-  padding-top: 240px;
 }
-
+.home-wrapper {
+  box-shadow: 0 0 10px 4px rgba(146, 146, 146, 0.27);
+  border-radius: 10px;
+  padding: 60px 100px 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: hsl(0deg 0% 22.98% / 47%);
+}
 .home h1 span{
   color: #5151b9;
 }
@@ -160,7 +173,7 @@ header ul{
 }
 
 .title{
-  font-weight: 700;
+  font-weight: 900;
   font-size: 34px;
   margin-bottom: 30px;
 }
@@ -174,8 +187,8 @@ header ul{
   border-radius: 10px;
   color: #000000;
   align-items: center;
-  margin-top: 120px;
-  margin-bottom: 50px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   column-gap: 20px;
   padding: 25px;
 }
@@ -192,13 +205,22 @@ header ul{
 
 .knowladge{
   color: #000000;
-  background-color: #f3f3f3;
+  background-color: #edeef5;
+  background-image: url("assets/images/BL - Business Sectors - Construction copy 2.jpg");
+  background-position: 10% 70%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   padding-top: 50px;
+  margin-bottom: 80px;
   padding-bottom: 90px;
 }
 
 .knowladge h2{
+  color: #ffffff;
   text-align: center;
+  margin-left: auto;
+  width: 50%;
 }
 
 .knowladge-icon{
@@ -212,15 +234,22 @@ header ul{
 }
 .knowladge-inner-card{
   padding: 20px;
-  background-color: #ffffff;
   box-shadow: 0 0 10px 4px rgba(146, 146, 146, 0.27);
   border-radius: 10px;
+  background: linear-gradient(#ffffff, #ffffff 50%, #edeef5 50%, #edeef5);
+  background-size: 100% 200%;
+  transition: background 0.4s;
 }
-
+.knowladge-inner-card:hover {
+  background-position: 100% 100%;
+}
 .knowladge-inner{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   column-gap: 35px;
+  margin-left: auto;
+  transition: all 0.3s;
+  width: 50%;
   row-gap: 35px;
 }
 
@@ -252,13 +281,13 @@ header ul{
   color: #000000;
 }
 
-.contacts-form{
-  height: 100vh;
-  color: #000000;
-  position: relative;
-  padding-top: 150px;
-  padding-bottom: 100px;
-}
+/*.contacts-form{*/
+/*  height: 100vh;*/
+/*  color: #000000;*/
+/*  position: relative;*/
+/*  padding-top: 150px;*/
+/*  padding-bottom: 100px;*/
+/*}*/
 .contact-bg {
   width: 100%;
   position: absolute;
@@ -274,19 +303,32 @@ header ul{
   position: relative;
   height: 80vh;
 }
+/*.contacts-form form {*/
+/*  position: absolute;*/
+/*  bottom: 0;*/
+/*  right: 0;*/
+/*  width: 55%;*/
+/*  background-color: #f3f3f3b0;*/
+/*  box-shadow: 8px 6px 9px 3px rgba(146, 146, 146, 0.27);*/
+/*  border-radius: 8px;*/
+/*  margin-bottom: 80px;*/
+/*  padding: 25px;*/
+/*  display: flex;*/
+/*  flex-direction: column;*/
+/*  line-height: 30px;*/
+/*}*/
+.contacts-form {
+  color: #444444;
+}
+.contacts-form h3{
+  font-size: 35px;
+  line-height: 1.2em;
+  font-weight: 900;
+  text-transform: none;
+  margin-bottom: 30px;
+}
 .contacts-form form {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 55%;
-  background-color: #f3f3f3b0;
-  box-shadow: 8px 6px 9px 3px rgba(146, 146, 146, 0.27);
-  border-radius: 8px;
-  margin-bottom: 80px;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  line-height: 30px;
+
 }
 .contact-details {
   box-shadow: 0 0 10px 4px rgba(146, 146, 146, 0.27);
@@ -308,9 +350,10 @@ header ul{
 .contacts-form input,
 .contacts-form textarea{
   padding: 15px 20px;
-  border: none;
+  border: 1px solid #e1e1e1;
   width: 100%;
   border-radius: 5px;
+  margin-bottom: 20px;
   resize: none;
   color: #000000;
 }
@@ -354,7 +397,8 @@ header ul{
 /*Footer*/
 
 footer{
-  background-color: rgb(74, 74, 74);
+  background-color: #edeef5;
+  color: #444444;
   box-shadow: 0 0 5px 5px rgba(47, 47, 47, 0.24);
   padding: 50px 0;
 }
@@ -416,22 +460,54 @@ footer{
 }
 .about {
   position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 150px 0 128px;
 }
 .about-bg {
-  height: 400px;
-  width: 100%;
-  filter: brightness(50%);
-  /*object-fit: cover;*/
-  background-image: url("assets/images/about-bg.jpg");
+  background-image: url(assets/images/breadcrumb.jpg);
+  position: absolute;
+  top: -20px;
+  left: 0;
+  bottom: -20px;
+  right: 0;
+  background-attachment: scroll;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-position: center 80%;
-  background-attachment: fixed;
+  background-size: cover;
+  z-index: -1;
 }
 .about h1 {
-  position: absolute;
-  top: 50%;
   color: #ffffff;
-  left: 50%;
   font-size: 60px;
-  transform: translate(-50%);
+  line-height: 1.2em;
+  font-weight: 900;
+}
+
+.contacts-inner {
+  display: grid;
+  column-gap: 50px;
+  grid-template-columns: 2fr 1.5fr;
+  margin: 80px 0 30px;
+}
+.contacts-items {
+  margin-top: 35px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.contact-item {
+  text-align: left;
+  margin-left: 15px;
+}
+.contact-item h4{
+  margin: 5px 0;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.contact-item p{
+  color: #444444;
+  font-size: 16px;
+  line-height: 26px;
 }

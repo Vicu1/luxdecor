@@ -7,9 +7,8 @@ const AboutPage = () => {
         <>
             <div className={'about'}>
                 <div className={'about-bg'} />
-                <h1>About</h1>
+                <h1 className={'container'}>About me</h1>
             </div>
-
             <section className={'container'}>
                 <div className="about-content">
                     <img className="img-about" src={about} alt="about" />
@@ -42,7 +41,7 @@ const AboutPage = () => {
             <section className="knowladge">
                 <div className={'container'}>
                     <h2 className="title">
-                        My abilities
+                        Main Reason to Choose Us
                     </h2>
                     <div className="knowladge-inner">
                         {abilities.map((ability, index) =>
@@ -53,9 +52,6 @@ const AboutPage = () => {
                                         {ability.title}
                                     </h3>
                                 </div>
-                                <p>
-                                    {ability.text}
-                                </p>
                             </div>
                         )}
                     </div>

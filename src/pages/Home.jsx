@@ -4,15 +4,15 @@ const HomePage = () => {
     return (
         <section className="home">
             <img className={'home-bg'} src={bg} alt={'bg'}/>
-            <div className={'container'}>
+            <div className={'container home-wrapper'}>
                 <h1>
                     Site name
                 </h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, est!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit
                 </p>
                 <BlackBtn url={'/projects'}>
-                    See projects
+                    See services
                 </BlackBtn>
             </div>
         </section>

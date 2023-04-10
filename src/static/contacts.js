@@ -1,4 +1,4 @@
-import phone from '../assets/images/phone.png'
+import phone from '../assets/images/phone-call (2).png'
 export const contacts = [
     {
         icon: phone,
