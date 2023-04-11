@@ -3,8 +3,9 @@ import HomePage from "./pages/Home.jsx";
 import HomeLayout from "./layouts/HomeLayout.jsx";
 import DefaultLayout from "./layouts/DefaultLayout.jsx";
 import AboutPage from "./pages/About.jsx";
-import ProjectsPage from "./pages/Projects.jsx";
 import ContactsPage from "./pages/Contacts.jsx";
+import ServicesPage from "./pages/Services";
+import GalleryPage from "./pages/Gallery";
 
 const App = () => {
     return (
@@ -14,7 +15,8 @@ const App = () => {
             </Route>
             <Route element={<DefaultLayout/>}>
                 <Route path={'/about'} element={<AboutPage/>}></Route>
-                <Route path={'/projects'} element={<ProjectsPage/>}></Route>
+                <Route path={'/services'} element={<ServicesPage/>}></Route>
+                <Route path={'/gallery'} element={<GalleryPage/>}></Route>
                 <Route path={'/contacts'} element={<ContactsPage/>}></Route>
             </Route>
         </Routes>

@@ -10,10 +10,14 @@ const Header = ({background = ''}) => {
         label: 'About',
         link: '/about'
     },
-    // {
-    //     label: 'Services',
-    //     link: '/services'
-    // },
+    {
+        label: 'Services',
+        link: '/services'
+    },
+    {
+        label: 'Gallery',
+        link: '/gallery'
+    },
     {
         label: 'Contacts',
         link: '/contacts'

@@ -6,7 +6,6 @@ import './App.css'
 import HomeLayout from "./layouts/HomeLayout.jsx";
 import HomePage from "./pages/Home.jsx";
 import AboutPage from "./pages/About.jsx";
-import ProjectsPage from "./pages/Projects.jsx";
 import Gallery from "./pages/Gallery.jsx";
 import GalleryPage from "./pages/Gallery.jsx";
 import ContactsPage from "./pages/Contacts.jsx";

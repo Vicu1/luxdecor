@@ -11,7 +11,7 @@ const HomePage = () => {
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit
                 </p>
-                <BlackBtn url={'/projects'}>
+                <BlackBtn url={'/services'}>
                     See services
                 </BlackBtn>
             </div>
