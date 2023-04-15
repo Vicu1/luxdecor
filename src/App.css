@@ -898,7 +898,8 @@ footer{
     margin-bottom: 30px;
   }
   .home-wrapper {
-    padding: 20px 15px 25px;
+    width: 314px;
+    padding: 30px 15px 35px;
   }
   .black-btn{
     padding: 10px 16px;
