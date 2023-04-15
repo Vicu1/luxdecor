@@ -1,5 +1,5 @@
 import roof from '../assets/images/service-v7-1.jpg'
-import house from '../assets/images/broken-house.png'
+import house from '../assets/images/roof-svgrepo-com.svg'
 const ServicesPage = () => {
     const services = [
         {

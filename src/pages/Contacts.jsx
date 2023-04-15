@@ -70,9 +70,9 @@ const ContactsPage = () => {
                             </div>
                         </div>
                     </div>
-                    <iframe
+                    <iframe className={'map'}
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10351.397784672383!2d5.82595904000069!3d49.56286381980249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47eab6427e7e8251%3A0x23600db0f18ecbe7!2z0JDRgtGOLCA2NzkxINCe0LHQsNC90LYsINCR0LXQu9GM0LPQuNGP!5e0!3m2!1sru!2s!4v1681066015075!5m2!1sru!2s"
-                        width="100%" height="400" style={{border: 'none', margin: '80px 0'}} allowFullScreen="" loading="lazy"
+                        width="100%" height="400" allowFullScreen="" loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"/>
                 </div>
             </section>

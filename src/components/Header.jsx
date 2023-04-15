@@ -1,6 +1,8 @@
 import {Link, useLocation} from "react-router-dom";
-import logo from '../assets/images/logo.png'
+import logo from '../assets/images/design-svgrepo-com.svg'
+import {useState} from "react";
 const Header = ({background = ''}) => {
+    const [open, setOpen] = useState(false)
     const router = useLocation()
     const headers = [{
         label: 'Home',
@@ -22,7 +24,7 @@ const Header = ({background = ''}) => {
         label: 'Contacts',
         link: '/contacts'
     }]
-    console.log(router)
+
     return (
         <header className={background}>
             <div className="container">
@@ -30,13 +32,18 @@ const Header = ({background = ''}) => {
                     <Link to={'/'}>
                         <img className="logo" src={logo} alt="Logo" />
                     </Link>
-                    <ul>
+                    <ul className={`${open ? 'show' : ''}`}>
                         {headers.map((item, key) =>
                             <li className={`nav-item`} key={key}>
-                                <Link className={`nav-link ${router.pathname === item.link && 'nav-link-active'}`} to={item.link}>{item.label}</Link>
+                                <Link onClick={() => setOpen(false)} className={`nav-link ${router.pathname === item.link && 'nav-link-active'}`} to={item.link}>{item.label}</Link>
                             </li>
                         )}
                     </ul>
+                    <div className={`hamburger-lines ${open ? 'show' : ''}`} onClick={() => setOpen((value) => !value)}>
+                        <span className="line line1"></span>
+                        <span className="line line2"></span>
+                        <span className="line line3"></span>
+                    </div>
                 </nav>
             </div>
         </header>

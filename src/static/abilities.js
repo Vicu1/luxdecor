@@ -1,4 +1,4 @@
-import worker from '../assets/images/worker.png'
+import worker from '../assets/images/constructor-hat-helmet-protection-worker-svgrepo-com.svg'
 export const abilities = [
   {
     image: worker,

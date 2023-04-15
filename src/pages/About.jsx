@@ -1,7 +1,5 @@
-import about from '../assets/images/about/about.jpeg'
-import webDesign from '../assets/images/about/web-design.png'
+import about from '../assets/images/pexels-eva-klanduchova-296968.jpg'
 import {abilities} from "../static/abilities.js";
-import aboutBg from '../assets/images/about-bg.jpg'
 const AboutPage = () => {
     return (
         <>

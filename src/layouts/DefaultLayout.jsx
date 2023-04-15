@@ -2,7 +2,7 @@ import Header from "../components/Header.jsx";
 import instagram from '../assets/images/footer/instagram.png'
 import facebook from '../assets/images/footer/facebook.png'
 import twitter from '../assets/images/footer/twitter.png'
-import logo from '../assets/images/logo.png'
+import logo from '../assets/images/design-svgrepo-com.svg'
 import {useEffect} from "react";
 import {Outlet, useLocation} from "react-router-dom";
 const DefaultLayout = () => {
