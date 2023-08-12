@@ -15,7 +15,9 @@ body {
   background-color: #ffffff;
   color: #ffffff;
 }
-
+#root {
+  overflow-x: hidden;
+}
 .withBg {
   color: #444444;
   background-color: #ffffff;

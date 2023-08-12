@@ -1,5 +1,4 @@
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../assets/images/design-svgrepo-com.svg';
 import { useState } from 'react';
 const Header = ({ background = '' }) => {
   const [open, setOpen] = useState(false);

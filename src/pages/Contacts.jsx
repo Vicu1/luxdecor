@@ -26,6 +26,7 @@ const ContactsPage = () => {
       .then(
         (result) => {
           console.log(result.text);
+          window.location = '/contacts'
         },
         (error) => {
           console.log(error.text);
@@ -108,7 +109,12 @@ const ContactsPage = () => {
                     />
                     <div className={'contact-item'}>
                       <h4>{contact.title}:</h4>
-                      <p>{contact.text}</p>
+                      {contact.title !== 'HOURS' &&
+                          <a href={contact.url} target={contact.title === 'ADDRESS' ? '_blank' : ''}>
+                            {contact.text}
+                          </a>
+                      }
+                      {contact.title === 'HOURS' && <p>{contact.text}</p>}
                     </div>
                   </div>
                 ))}

@@ -45,15 +45,15 @@ const DefaultLayout = () => {
               <h5 className="footer-title">Contacts</h5>
               <a
                 className="footer-info"
-                href=""
+                href="mailto:info@avg.lu"
               >
-                Mail (vicugaideic@gmail.com)
+                E-mail (info@avg.lu)
               </a>
               <a
                 className="footer-info"
-                href=""
+                href="tel:+352661500924"
               >
-                Phone (+373-666-666-666)
+                Phone (+352 661 500 924)
               </a>
             </div>
             <div className="footer-item">
