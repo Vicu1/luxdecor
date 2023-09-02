@@ -5,39 +5,25 @@ const AboutPage = () => {
     <>
       <div className={'about'}>
         <div className={'about-bg'} />
-        <h1 className={'container'} data-aos="zoom-in">About me</h1>
+        <h1 className={'container'} data-aos="zoom-in">About us</h1>
       </div>
       <section className={'container'}>
         <div className="about-content">
           <img
-              data-aos="zoom-in-right"
             className="img-about"
             src={about}
             alt="about"
           />
           <div data-aos="zoom-in-left" className="about-content-inner">
-            <h2 className="title">About me</h2>
+            <h2 className="title">About us</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
-              mollitia. Exercitationem error quod enim, consectetur blanditiis
-              placeat pariatur, alias minus quaerat corrupti debitis nisi ea,
-              adipisci atque. Aperiam blanditiis aliquam mollitia molestias est
-              corporis nostrum et ad delectus libero, earum corrupti fugit
-              debitis velit accusantium sed fugiat sequi adipisci suscipit?
+              We're more than just a construction company – we're your partners in bringing architectural visions to life. With a legacy of excellence and a passion for innovation, we've been at the forefront of the construction industry for 10 years.
             </p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
-              maxime totam sit temporibus enim optio soluta numquam earum
-              facilis. Eius, ullam hic eos sit minima voluptate quia voluptatum
-              et blanditiis autem deleniti nemo perspiciatis maiores tempore
-              similique atque necessitatibus ex.
+              Our unwavering commitment to quality, safety, and customer satisfaction has earned us a stellar reputation among our clients and peers. We specialize in a wide range of construction services, including residential, commercial, and industrial projects.
             </p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
-              maxime totam sit temporibus enim optio soluta numquam earum
-              facilis. Eius, ullam hic eos sit minima voluptate quia voluptatum
-              et blanditiis autem deleniti nemo perspiciatis maiores tempore
-              similique atque necessitatibus ex.
+              With a proven track record of successful projects and a passion for excellence, we are your trusted construction partner. Whether you have a small renovation project or a large-scale development, we have the expertise and dedication to bring your vision to life. Contact us today to discuss your project needs and experience the difference with DJ Concept.
             </p>
           </div>
         </div>

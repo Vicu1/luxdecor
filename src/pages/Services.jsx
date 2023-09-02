@@ -5,38 +5,26 @@ const ServicesPage = () => {
     {
       img: roof,
       icon: house,
-      title: 'New Roof Installation',
-      text: 'Bring to the table win-win survial strategies to ensure proactive on a practice domination.',
+      title: 'Facade insulation & painting',
+      text: 'Revitalize your building\'s exterior with our expert facade insulation and painting services.',
     },
     {
       img: roof,
       icon: house,
-      title: 'New Roof Installation',
-      text: 'Bring to the table win-win survial strategies to ensure proactive on a practice domination.',
+      title: 'Couverture Services',
+      text: 'Discover the comfort and protection you need for your roofing needs with our comprehensive couverture services.',
     },
     {
       img: roof,
       icon: house,
-      title: 'New Roof Installation',
-      text: 'Bring to the table win-win survial strategies to ensure proactive on a practice domination.',
+      title: 'Cleaning and Treatment',
+      text: 'We offer a comprehensive range of professional cleaning and treatment services tailored to meet your specific needs.',
     },
     {
       img: roof,
       icon: house,
-      title: 'New Roof Installation',
-      text: 'Bring to the table win-win survial strategies to ensure proactive on a practice domination.',
-    },
-    {
-      img: roof,
-      icon: house,
-      title: 'New Roof Installation',
-      text: 'Bring to the table win-win survial strategies to ensure proactive on a practice domination.',
-    },
-    {
-      img: roof,
-      icon: house,
-      title: 'New Roof Installation',
-      text: 'Bring to the table win-win survial strategies to ensure proactive on a practice domination.',
+      title: 'Tightness Service',
+      text: 'Our Tightness Service is designed to provide you with the utmost confidence in the integrity of your building\'s envelope.',
     },
   ];
   return (
@@ -73,13 +61,10 @@ const ServicesPage = () => {
                   alt="img"
                 />
                 <div className={'service-icon'}>
-                  <img
-                    src={service.icon}
-                    alt="img"
-                  />
+
+                  <h4>{service.title}</h4>
                 </div>
                 <div className={'service-content'}>
-                  <h4>{service.title}</h4>
                   <p>{service.text}</p>
                 </div>
               </div>

@@ -11,8 +11,8 @@ const HomePage = () => {
       <div className={'container home-wrapper'}>
           <div data-aos="fade-up"
                data-aos-anchor-placement="top-bottom">
-              <h1>Site name</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+              <h1>DJ Concept</h1>
+              <p>Transforming Visions into Concrete Realities</p>
               <BlackBtn url={'/services'}>See services</BlackBtn>
           </div>
 

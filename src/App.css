@@ -257,6 +257,11 @@ header ul {
   background-size: 100% 200%;
   transition: background 0.4s;
 }
+.knowladge-inner-card img {
+  width: 50px;
+  height: 50px;
+}
+
 .knowladge-inner-card:hover {
   background-position: 100% 100%;
 }
@@ -553,13 +558,7 @@ footer {
   position: relative;
 }
 .service-content {
-  padding: 40px 40px 42px;
-}
-.service-content h4 {
-  color: #111e37;
-  font-size: 25px;
-  line-height: 35px;
-  margin-bottom: 2px;
+  padding: 10px 40px 42px;
 }
 .service-content p {
   font-weight: 500;
@@ -590,16 +589,17 @@ footer {
 }
 .service-icon {
   background-color: #ffffff;
-  position: absolute;
   display: flex;
   align-items: center;
-  justify-content: center;
-  left: 40px;
-  top: 45%;
-  width: 90px;
-  height: 80px;
-  border-radius: 8px;
+  padding: 0 30px;
   line-height: 0;
+}
+.service-icon h4 {
+  color: #111e37;
+  font-size: 25px;
+  line-height: 35px;
+  margin-bottom: 2px;
+  margin-left: 10px;
 }
 .service-icon img {
   width: 55px;
@@ -817,9 +817,11 @@ footer {
     top: initial;
     left: 0;
     bottom: 5%;
+    justify-content: center;
   }
   .service-content {
-    padding: 20px 0 20px 110px;
+    padding: 20px;
+    text-align: center;
   }
   .services {
     padding: 30px 0;
@@ -877,11 +879,18 @@ footer {
   .gallery-content p {
     font-size: 18px;
   }
-  .service-icon {
+  .service-icon img {
     display: none;
   }
+  .service-icon {
+    justify-content: center;
+  }
+  .service-icon h4 {
+    font-size: 17px;
+  }
   .service-content {
-    padding: 10px;
+    padding: 5px;
+    text-align: center;
   }
   .services h1 {
     font-size: 30px;

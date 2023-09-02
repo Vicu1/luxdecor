@@ -22,38 +22,38 @@ const DefaultLayout = () => {
           <div className="footer">
             <a
               className="footer-logo"
-              href="index.html"
+              href="/"
             >
-              <h3>ACM LUX</h3>
+              <h3>DJC</h3>
             </a>
             <div className="footer-item">
               <h5 className="footer-title">Introduction</h5>
               <a
                 className="footer-info"
-                href=""
+                href="/about"
               >
-                About me
+                About us
               </a>
               <a
                 className="footer-info"
-                href=""
+                href="/services"
               >
-                My projects
+                Our services
               </a>
             </div>
             <div className="footer-item">
               <h5 className="footer-title">Contacts</h5>
               <a
                 className="footer-info"
-                href="mailto:info@avg.lu"
+                href="mailto:info@dj-concept.be"
               >
-                E-mail (info@avg.lu)
+                E-mail (info@dj-concept.be)
               </a>
               <a
                 className="footer-info"
-                href="tel:+352661500924"
+                href="tel:+495548487"
               >
-                Phone (+352 661 500 924)
+                Phone (+495 548 487)
               </a>
             </div>
             <div className="footer-item">

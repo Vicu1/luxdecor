@@ -6,20 +6,20 @@ export const contacts = [
   {
     icon: phone,
     title: 'PHONE',
-    text: '+352 (661 500 924)',
-    url: 'tel:+352661500924'
+    text: '+495 (548 487)',
+    url: 'tel:+495548487'
   },
   {
     icon: mail,
     title: 'MAIL',
-    text: 'info@avg.lu',
-    url: 'mailto:info@avg.lu'
+    text: 'info@dj-concept.be',
+    url: 'mailto:info@dj-concept.be'
   },
   {
     icon: map,
     title: 'ADDRESS',
-    text: '21 rue Haute, 6791 Athus, Belgium-Province of Luxembourg',
-    url: 'https://www.google.com/maps/search/Rue+Haute+21,+Athus+6791+%D0%9E%D0%B1%D0%B0%D0%BD%D0%B6,+%D0%91%D0%B5%D0%BB%D1%8C%D0%B3%D0%B8%D1%8F/@49.5628637,5.8244141,15z/data=!3m1!4b1?entry=ttu'
+    text: 'Rue de Libin 23, 6800 Recogne, Belgium-Province of Luxembourg',
+    url: 'https://www.google.com/maps/place/Rue+de+Libin+23,+6800+Libramont-Chevigny,+%D0%91%D0%B5%D0%BB%D1%8C%D0%B3%D0%B8%D1%8F/@49.9107327,5.3399445,14.46z/data=!4m6!3m5!1s0x47c029f3ec4f6fb7:0xb5ffd626245f5f63!8m2!3d49.9121362!4d5.3483302!16s%2Fg%2F11c4l3dnnb?entry=ttu'
   },
   {
     icon: clock,
