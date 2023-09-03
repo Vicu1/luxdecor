@@ -1,27 +1,30 @@
-import roof from '../assets/images/service-v7-1.jpg';
+import facade from '../assets/images/facade.jpeg';
+import couverture from '../assets/images/couverture.jpg';
+import tratment from '../assets/images/tratment.jpg';
+import tightness from '../assets/images/tightness.jpg';
 import house from '../assets/images/roof-svgrepo-com.svg';
 const ServicesPage = () => {
   const services = [
     {
-      img: roof,
+      img: facade,
       icon: house,
       title: 'Facade insulation & painting',
       text: 'Revitalize your building\'s exterior with our expert facade insulation and painting services.',
     },
     {
-      img: roof,
+      img: couverture,
       icon: house,
       title: 'Couverture Services',
       text: 'Discover the comfort and protection you need for your roofing needs with our comprehensive couverture services.',
     },
     {
-      img: roof,
+      img: tratment,
       icon: house,
       title: 'Cleaning and Treatment',
       text: 'We offer a comprehensive range of professional cleaning and treatment services tailored to meet your specific needs.',
     },
     {
-      img: roof,
+      img: tightness,
       icon: house,
       title: 'Tightness Service',
       text: 'Our Tightness Service is designed to provide you with the utmost confidence in the integrity of your building\'s envelope.',

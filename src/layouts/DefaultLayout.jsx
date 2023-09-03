@@ -1,11 +1,12 @@
 import Header from '../components/Header.jsx';
-import instagram from '../assets/images/footer/instagram.png';
-import facebook from '../assets/images/footer/facebook.png';
-import twitter from '../assets/images/footer/twitter.png';
-import { useEffect } from 'react';
+import {useEffect, useState} from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
+import FacebookIcon from "../assets/images/footer/Facebook.jsx";
+import InstagramIcon from "../assets/images/footer/Instragram.jsx";
 const DefaultLayout = () => {
   const { pathname } = useLocation();
+  const [facebookHover, setFacebookHover] = useState(false)
+  const [instagramHover, setInstagramHover] = useState(false)
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -60,31 +61,20 @@ const DefaultLayout = () => {
               <h5 className="footer-title">Social</h5>
               <div className="footer-social">
                 <a
+                    onMouseOver={() => setInstagramHover(true)}
+                    onMouseLeave={() => setInstagramHover(false)}
                   className="footer-info"
                   href=""
                 >
-                  <img
-                    src={instagram}
-                    alt="img"
-                  />
+                  <InstagramIcon color={instagramHover ? '#d90429' : '#444444'} />
                 </a>
                 <a
-                  className="footer-info"
+                  onMouseOver={() => setFacebookHover(true)}
+                  onMouseLeave={() => setFacebookHover(false)}
+                  className={'footer-info'}
                   href=""
                 >
-                  <img
-                    src={facebook}
-                    alt="img"
-                  />
-                </a>
-                <a
-                  className="footer-info"
-                  href=""
-                >
-                  <img
-                    src={twitter}
-                    alt="img"
-                  />
+                 <FacebookIcon color={facebookHover ? '#d90429' : '#444444'} />
                 </a>
               </div>
             </div>
