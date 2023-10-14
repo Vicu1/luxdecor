@@ -31,7 +31,7 @@ const Header = ({ background = '' }) => {
       <div className="container">
         <nav>
           <Link to={'/'}>
-            <h3>DJC</h3>
+            <h3>AVG</h3>
           </Link>
           <ul className={`${open ? 'show' : ''}`}>
             {headers.map((item, key) => (

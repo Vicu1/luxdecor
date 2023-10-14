@@ -17,13 +17,14 @@ const AboutPage = () => {
           <div data-aos="zoom-in-left" className="about-content-inner">
             <h2 className="title">About us</h2>
             <p>
-              We're more than just a construction company – we're your partners in bringing architectural visions to life. With a legacy of excellence and a passion for innovation, we've been at the forefront of the construction industry for 10 years.
+              Qui sommes-nous ? Implantee au Province du Luxembourg depuis 2021, AVG LuxDecor est tout d'abord une Entreprise qui se veut a la fois jeune et flexible.
+              Cette Entreprise a su diversifier ses activites et reste a votre ecoute lors d'interventions aussi bien sur vos chantiers exterieurs (fenêtres et portes KÖMMERLING, facade isolante) que sur vos chantiers interieurs (peinture et decoration, platre, renovation).
             </p>
             <p>
-              Our unwavering commitment to quality, safety, and customer satisfaction has earned us a stellar reputation among our clients and peers. We specialize in a wide range of construction services, including residential, commercial, and industrial projects.
+              Nous vous proposons des fenêtres et des portes KÖMMERLING de haute qualité, fabriquées dans des délais très courts, avec une garantie constructeur de 5 ans. KÖMMERLING 76 et KÖMMERLING 88 est la fenêtre de l'avenir. Le système innovant premium de portes et fenêtres répond à toutes les exigences pour la construction de maisons passives, avec une protection sonore et anti-effraction optimale et un concept orienté vers de nouvelles perspectives.
             </p>
             <p>
-              With a proven track record of successful projects and a passion for excellence, we are your trusted construction partner. Whether you have a small renovation project or a large-scale development, we have the expertise and dedication to bring your vision to life. Contact us today to discuss your project needs and experience the difference with DJ Concept.
+              Sa reussite reside surtout dans la mise en place d'une equipe de professionnels dynamiques qui savent allier savoir-faire et experience pour repondre au mieux a vos exigences. N'hesitez pas a nous contacter et a nous demander conseils pour vos petits comme pour vos grands projets !
             </p>
           </div>
         </div>

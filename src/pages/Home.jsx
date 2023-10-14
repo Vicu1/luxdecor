@@ -1,4 +1,5 @@
-import bg from '../assets/images/bg.jpg';
+// import bg from '../assets/images/header-bg2.jpg';
+import bg from '../assets/images/header.jpg';
 import BlackBtn from '../components/UI/BlackBtn.jsx';
 const HomePage = () => {
   return (
@@ -11,8 +12,8 @@ const HomePage = () => {
       <div className={'container home-wrapper'}>
           <div data-aos="fade-up"
                data-aos-anchor-placement="top-bottom">
-              <h1>DJ Concept</h1>
-              <p>Transforming Visions into Concrete Realities</p>
+              <h1>Luxdecor</h1>
+              <p>FENÊTRES KÖMMERLING! RÉNOVATIONS ET CONSTRUCTIONS</p>
               <BlackBtn url={'/services'}>See services</BlackBtn>
           </div>
 

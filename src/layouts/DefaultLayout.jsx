@@ -25,7 +25,7 @@ const DefaultLayout = () => {
               className="footer-logo"
               href="/"
             >
-              <h3>DJC</h3>
+              <h3>AVG</h3>
             </a>
             <div className="footer-item">
               <h5 className="footer-title">Introduction</h5>
@@ -46,33 +46,26 @@ const DefaultLayout = () => {
               <h5 className="footer-title">Contacts</h5>
               <a
                 className="footer-info"
-                href="mailto:info@dj-concept.be"
+                href="mailto:info@avg.lu"
               >
-                E-mail (info@dj-concept.be)
+                E-mail (info@avg.lu)
               </a>
               <a
                 className="footer-info"
-                href="tel:+495548487"
+                href="tel:+32494683608"
               >
-                Phone (+495 548 487)
+                Phone (+32 494 683 608)
               </a>
             </div>
             <div className="footer-item">
               <h5 className="footer-title">Social</h5>
               <div className="footer-social">
                 <a
-                    onMouseOver={() => setInstagramHover(true)}
-                    onMouseLeave={() => setInstagramHover(false)}
-                  className="footer-info"
-                  href=""
-                >
-                  <InstagramIcon color={instagramHover ? '#d90429' : '#444444'} />
-                </a>
-                <a
                   onMouseOver={() => setFacebookHover(true)}
                   onMouseLeave={() => setFacebookHover(false)}
                   className={'footer-info'}
-                  href=""
+                  href="https://www.facebook.com/LuxDecor.Be/"
+                  target={'_blank'}
                 >
                  <FacebookIcon color={facebookHover ? '#d90429' : '#444444'} />
                 </a>
