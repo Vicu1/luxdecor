@@ -1,4 +1,4 @@
-import about from '../assets/images/pexels-eva-klanduchova-296968.jpg';
+import about from '../assets/images/about.png';
 import { abilities } from '../static/abilities.js';
 const AboutPage = () => {
   return (
@@ -17,14 +17,13 @@ const AboutPage = () => {
           <div data-aos="zoom-in-left" className="about-content-inner">
             <h2 className="title">About us</h2>
             <p>
-              Qui sommes-nous ? Implantee au Province du Luxembourg depuis 2021, AVG LuxDecor est tout d'abord une Entreprise qui se veut a la fois jeune et flexible.
-              Cette Entreprise a su diversifier ses activites et reste a votre ecoute lors d'interventions aussi bien sur vos chantiers exterieurs (fenêtres et portes KÖMMERLING, facade isolante) que sur vos chantiers interieurs (peinture et decoration, platre, renovation).
+              Since 1997. Consulting, IT Service&Sale. You can consult our experts on the needs of your website via e-mail, live support or phone. Our support team is here to provide you friendly service. Our staff makes your life easier!
             </p>
             <p>
-              Nous vous proposons des fenêtres et des portes KÖMMERLING de haute qualité, fabriquées dans des délais très courts, avec une garantie constructeur de 5 ans. KÖMMERLING 76 et KÖMMERLING 88 est la fenêtre de l'avenir. Le système innovant premium de portes et fenêtres répond à toutes les exigences pour la construction de maisons passives, avec une protection sonore et anti-effraction optimale et un concept orienté vers de nouvelles perspectives.
+              We are dedicated to providing reliable and efficient web hosting solutions for businesses, entrepreneurs, and individuals worldwide. With a passion for technological innovation and a commitment to exceptional customer service, we strive to ensure that your online presence is secure, accessible, and seamlessly integrated
             </p>
             <p>
-              Sa reussite reside surtout dans la mise en place d'une equipe de professionnels dynamiques qui savent allier savoir-faire et experience pour repondre au mieux a vos exigences. N'hesitez pas a nous contacter et a nous demander conseils pour vos petits comme pour vos grands projets !
+              Our mission is to empower our clients with the tools and support they need to succeed in the digital world. Whether you're a small business looking to establish an online footprint or a growing enterprise in need of scalable hosting solutions, we have the expertise and infrastructure to meet your specific requirements.
             </p>
           </div>
         </div>

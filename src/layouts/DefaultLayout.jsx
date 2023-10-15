@@ -37,9 +37,9 @@ const DefaultLayout = () => {
               </a>
               <a
                 className="footer-info"
-                href="/services"
+                href="/contacts"
               >
-                Our services
+                Our contacts
               </a>
             </div>
             <div className="footer-item">

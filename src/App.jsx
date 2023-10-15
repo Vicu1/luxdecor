@@ -1,14 +1,14 @@
 import { Route, Routes } from 'react-router-dom';
 import HomePage from './pages/Home.jsx';
-import HomeLayout from './layouts/HomeLayout.jsx';
 import DefaultLayout from './layouts/DefaultLayout.jsx';
 import AboutPage from './pages/About.jsx';
 import ContactsPage from './pages/Contacts.jsx';
-import ServicesPage from './pages/Services';
-import GalleryPage from './pages/Gallery';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {useEffect} from "react";
+import Webhosting from "./pages/Webhosting.jsx";
+import Vpshosting from "./pages/Vpshosting.jsx";
+import DedicatedServer from "./pages/DeidicatedServer.jsx";
 const App = () => {
 
     useEffect(() => {
@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <Routes>
-      <Route element={<HomeLayout />}>
+      <Route element={<DefaultLayout />}>
         <Route
           index
           element={<HomePage />}
@@ -29,12 +29,16 @@ const App = () => {
           element={<AboutPage />}
         ></Route>
         <Route
-          path={'/services'}
-          element={<ServicesPage />}
+          path={'/web-hosting'}
+          element={<Webhosting />}
         ></Route>
-        <Route
-          path={'/gallery'}
-          element={<GalleryPage />}
+          <Route
+          path={'/vps-hosting'}
+          element={<Vpshosting />}
+        ></Route>
+          <Route
+          path={'/dedicated-servers'}
+          element={<DedicatedServer />}
         ></Route>
         <Route
           path={'/contacts'}

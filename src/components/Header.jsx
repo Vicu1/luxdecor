@@ -1,24 +1,25 @@
 import { Link, useLocation } from 'react-router-dom';
 import { useState } from 'react';
+import logo from '../assets/images/logo.png'
 const Header = ({ background = '' }) => {
   const [open, setOpen] = useState(false);
   const router = useLocation();
   const headers = [
     {
-      label: 'Home',
-      link: '/',
-    },
-    {
       label: 'About',
       link: '/about',
     },
     {
-      label: 'Services',
-      link: '/services',
+      label: 'Web hosting',
+      link: '/web-hosting',
     },
     {
-      label: 'Gallery',
-      link: '/gallery',
+      label: 'VPS hosting',
+      link: '/vps-hosting',
+    },
+    {
+      label: 'Dedicated servers',
+      link: '/dedicated-servers',
     },
     {
       label: 'Contacts',
@@ -31,7 +32,7 @@ const Header = ({ background = '' }) => {
       <div className="container">
         <nav>
           <Link to={'/'}>
-            <h3>AVG</h3>
+            <img src={logo} alt={'logo'}/>
           </Link>
           <ul className={`${open ? 'show' : ''}`}>
             {headers.map((item, key) => (
